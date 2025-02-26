@@ -135,7 +135,7 @@
             <OutArgument x:TypeArguments="x:String">[testData]</OutArgument>
           </Assign.To>
           <Assign.Value>
-            <InArgument x:TypeArguments="x:String">[Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(testData.Trim.ToLower).Replace("In ", "in ").Replace("From ", "from ").Replace("Of ", "of ").Replace("On ", "on ").Replace("Milf", "MILF")]</InArgument>
+            <InArgument x:TypeArguments="x:String">[Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(testData.Trim.ToLower).Replace("In ", "in ").Replace("From ", "from ").Replace("Of ", "of ").Replace("On ", "on ").Replace("Milf", "MILF").Replace("With ", "with ").Replace("By ", "by ").Replace("And ", "and ").Replace("At ", "at ")]</InArgument>
           </Assign.Value>
         </Assign>
       </Sequence>
