@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Download File Demo Website  Selenium P",
+  "Type": "Screen",
+  "Id": "qhSu4xFnM0S50QTtam6-eg",
+  "Reference": "5eLnVBICaU2jtacSQk0aSg/qhSu4xFnM0S50QTtam6-eg",
+  "ParentRef": "5eLnVBICaU2jtacSQk0aSg/Y31spgpTU0ic5xR3qzmEbg",
+  "Created": "2025-02-26T22:25:15.3940582Z",
+  "Updated": "2025-02-26T22:25:15.3940582Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
