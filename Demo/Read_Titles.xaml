@@ -94,7 +94,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ReadTextFile File="{x:Null}" Content="[testData]" DisplayName="Read Text File" FileName="Test_Data\demo-data.txt" sap:VirtualizedContainerService.HintSize="468,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <ui:ReadTextFile File="{x:Null}" Content="[testData]" DisplayName="Read Text File" FileName="Test_Data\title_data.txt" sap:VirtualizedContainerService.HintSize="468,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
       <If Condition="[testData.Trim.Length = 0]" sap:VirtualizedContainerService.HintSize="468,336" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Then>
           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="Sequence_4">
@@ -123,7 +123,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Test_Data\demo-data.txt" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_1">
+        <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Test_Data\title_data.txt" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_1">
           <ui:WriteTextFile.Text>
             <InArgument x:TypeArguments="x:String">
               <Literal x:TypeArguments="x:String" Value="" />
@@ -139,7 +139,7 @@
           </Assign.Value>
         </Assign>
       </Sequence>
-      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Target\title-product.txt" sap:VirtualizedContainerService.HintSize="468,156" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[testData]" />
+      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Target\title_product.txt" sap:VirtualizedContainerService.HintSize="468,156" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[testData]" />
     </Sequence>
   </Sequence>
 </Activity>
