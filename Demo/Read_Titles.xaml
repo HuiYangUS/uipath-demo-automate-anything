@@ -77,6 +77,7 @@
       <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Read_Titles" sap:VirtualizedContainerService.HintSize="1276,1136" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -123,7 +124,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Test_Data\title_data.txt" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_1">
+        <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File &lt;Update Test Data&gt;" FileName="Test_Data\title_data.txt" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="WriteTextFile_1">
           <ui:WriteTextFile.Text>
             <InArgument x:TypeArguments="x:String">
               <Literal x:TypeArguments="x:String" Value="" />
@@ -135,11 +136,11 @@
             <OutArgument x:TypeArguments="x:String">[testData]</OutArgument>
           </Assign.To>
           <Assign.Value>
-            <InArgument x:TypeArguments="x:String">[Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(testData.Trim.ToLower).Replace("In ", "in ").Replace("From ", "from ").Replace("Of ", "of ").Replace("On ", "on ").Replace("Milf", "MILF").Replace("With ", "with ").Replace("By ", "by ").Replace("And ", "and ").Replace("At ", "at ")]</InArgument>
+            <InArgument x:TypeArguments="x:String">[Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(testData.Trim.ToLower).Replace("In ", "in ").Replace("From ", "from ").Replace("Of ", "of ").Replace("On ", "on ").Replace("Milf", "MILF").Replace("With ", "with ").Replace("By ", "by ").Replace("And ", "and ").Replace("At ", "at ").Replace("For ", "for ")]</InArgument>
           </Assign.Value>
         </Assign>
       </Sequence>
-      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="Target\title_product.txt" sap:VirtualizedContainerService.HintSize="468,156" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[testData]" />
+      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File &lt;Result&gt;" FileName="Target\title_product.txt" sap:VirtualizedContainerService.HintSize="468,156" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[testData]" />
     </Sequence>
   </Sequence>
 </Activity>
