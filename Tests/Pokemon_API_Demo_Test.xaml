@@ -105,7 +105,7 @@
       <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Pokemon_API_Demo_Test" sap:VirtualizedContainerService.HintSize="1286,1317" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Demo Test" sap:VirtualizedContainerService.HintSize="1276,1317" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -133,7 +133,7 @@
                 <OutArgument x:TypeArguments="x:Int32">[testID]</OutArgument>
               </ui:AssignOperation.To>
               <ui:AssignOperation.Value>
-                <InArgument x:TypeArguments="x:Int32">3</InArgument>
+                <InArgument x:TypeArguments="x:Int32">6</InArgument>
               </ui:AssignOperation.Value>
             </ui:AssignOperation>
             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -181,7 +181,7 @@
           <InArgument x:TypeArguments="x:String">[testPokemonJSON.Item("sprites").Item("other").Item("official-artwork").Item("front_shiny").ToString]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;&lt;&lt;Result&gt;&gt;&quot; + Environment.NewLine +&#xD;&#xA;imgURL]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;&lt;&lt;&lt;Result&gt;&gt;&gt;&quot; + Environment.NewLine +&#xD;&#xA;&quot;File = &quot; + imgURL]" />
       <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" sap2010:Annotation.AnnotationText="Download Image File" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="[imgURL]" sap:VirtualizedContainerService.HintSize="479,124" sap2010:WorkflowViewState.IdRef="HttpClient_3" Method="GET" ResourcePath="C:\Projects\uipath-demo-automate-anything\Target\test-pokemon.png" TimeoutMS="9999">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
