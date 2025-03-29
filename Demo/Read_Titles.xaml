@@ -79,13 +79,13 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Read_Titles" sap:VirtualizedContainerService.HintSize="1286,1072" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Read_Titles" sap:VirtualizedContainerService.HintSize="1276,1136" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Demo Sequence" sap:VirtualizedContainerService.HintSize="502,1049" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Demo Sequence" sap:VirtualizedContainerService.HintSize="502,1113" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="testData" />
       </Sequence.Variables>
@@ -95,7 +95,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:ReadTextFile File="{x:Null}" Content="[testData]" DisplayName="Read Text File" FileName="Test_Data\title_data.txt" sap:VirtualizedContainerService.HintSize="468,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-      <If Condition="[testData.Trim.Length = 0]" sap:VirtualizedContainerService.HintSize="468,336" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[testData.Trim.Length = 0]" sap:VirtualizedContainerService.HintSize="468,400" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Then>
           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
@@ -107,10 +107,10 @@
           </Sequence>
         </If.Then>
         <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
@@ -130,7 +130,7 @@
             </InArgument>
           </ui:WriteTextFile.Text>
         </ui:WriteTextFile>
-        <Assign DisplayName="Assign &lt;Update Data&gt;" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign DisplayName="Re-Assign &lt;Test Data&gt;" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_1">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[testData]</OutArgument>
           </Assign.To>
