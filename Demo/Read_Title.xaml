@@ -80,7 +80,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Demo" sap:VirtualizedContainerService.HintSize="1276,1136" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Demo" sap:VirtualizedContainerService.HintSize="1224,1136" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -136,7 +136,7 @@
             <OutArgument x:TypeArguments="x:String">[testData]</OutArgument>
           </Assign.To>
           <Assign.Value>
-            <InArgument x:TypeArguments="x:String">[Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(testData.Trim.ToLower).Replace("In ", "in ").Replace("From ", "from ").Replace("Of ", "of ").Replace("On ", "on ").Replace("Milf", "MILF").Replace("With ", "with ").Replace("By ", "by ").Replace("And ", "and ").Replace("At ", "at ").Replace("For ", "for ")]</InArgument>
+            <InArgument x:TypeArguments="x:String">[Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(testData.Trim.ToLower).Replace("In ", "in ").Replace("From ", "from ").Replace("Of ", "of ").Replace("On ", "on ").Replace("Milf", "MILF").Replace("With ", "with ").Replace("By ", "by ").Replace("And ", "and ").Replace("At ", "at ").Replace("For ", "for ").Replace("Bbc ", "BBC ")]</InArgument>
           </Assign.Value>
         </Assign>
       </Sequence>
