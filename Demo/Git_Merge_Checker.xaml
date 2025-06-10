@@ -106,7 +106,7 @@
                   <OutArgument x:TypeArguments="x:String">[demoID]</OutArgument>
                 </ui:AssignOperation.To>
                 <ui:AssignOperation.Value>
-                  <InArgument x:TypeArguments="x:String">250608</InArgument>
+                  <InArgument x:TypeArguments="x:String">250505</InArgument>
                 </ui:AssignOperation.Value>
               </ui:AssignOperation>
             </scg:List>
@@ -120,7 +120,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;ID = &quot; + demoID]" />
-        <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" Buttons="[ButtonOptions.Ok]" Caption="Git Values" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Default value = &quot; + demoID + Environment.NewLine +&#xD;&#xA;&quot;Current value = &quot; + Now.ToString(&quot;yyMMdd&quot;)]" />
+        <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" Buttons="[ButtonOptions.Ok]" Caption="Git Values" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Default value = &quot; + demoID + Environment.NewLine +&#xA;&quot;Current value = &quot; + Now.ToString(&quot;yyMMdd&quot;)]" />
       </Sequence>
     </Sequence>
   </Sequence>
