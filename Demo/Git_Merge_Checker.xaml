@@ -106,7 +106,7 @@
                   <OutArgument x:TypeArguments="x:String">[demoID]</OutArgument>
                 </ui:AssignOperation.To>
                 <ui:AssignOperation.Value>
-                  <InArgument x:TypeArguments="x:String">250609</InArgument>
+                  <InArgument x:TypeArguments="x:String">250608</InArgument>
                 </ui:AssignOperation.Value>
               </ui:AssignOperation>
             </scg:List>
