@@ -80,13 +80,13 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Demo" sap:VirtualizedContainerService.HintSize="1224,1136" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Demo" sap:VirtualizedContainerService.HintSize="1234,1137" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Demo Sequence" sap:VirtualizedContainerService.HintSize="502,1113" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Demo Sequence" sap:VirtualizedContainerService.HintSize="502,1114" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="testData" />
       </Sequence.Variables>
@@ -118,7 +118,7 @@
           </Sequence>
         </If.Else>
       </If>
-      <Sequence DisplayName="Update Demo Data" sap:VirtualizedContainerService.HintSize="468,362" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <Sequence DisplayName="Update Demo Data" sap:VirtualizedContainerService.HintSize="468,363" sap2010:WorkflowViewState.IdRef="Sequence_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -131,12 +131,15 @@
             </InArgument>
           </ui:WriteTextFile.Text>
         </ui:WriteTextFile>
-        <Assign DisplayName="Re-Assign &lt;Test Data&gt;" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign DisplayName="Re-Assign &lt;Test Data&gt;" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Assign_1">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[testData]</OutArgument>
           </Assign.To>
           <Assign.Value>
-            <InArgument x:TypeArguments="x:String">[Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(testData.Trim.ToLower).Replace("In ", "in ").Replace("From ", "from ").Replace("Of ", "of ").Replace("On ", "on ").Replace("Milf", "MILF").Replace("With ", "with ").Replace("By ", "by ").Replace("And ", "and ").Replace("At ", "at ").Replace("For ", "for ").Replace("Bbc ", "BBC ")]</InArgument>
+            <InArgument x:TypeArguments="x:String" xml:space="preserve">[Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(testData.Trim.ToLower).Replace("In ", "in ").
+Replace("From ", "from ").Replace("Of ", "of ").Replace("On ", "on ").Replace("Milf", "MILF").Replace("With ", "with ").
+Replace("By ", "by ").Replace("And ", "and ").Replace("At ", "at ").Replace("For ", "for ").Replace("Bbc ", "BBC ").Replace("Is ", "is ").
+Replace("As ", "as ").Replace("To ", "to ")]</InArgument>
           </Assign.Value>
         </Assign>
       </Sequence>
