@@ -83,13 +83,13 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Demo" sap:VirtualizedContainerService.HintSize="1275,671.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Demo" sap:VirtualizedContainerService.HintSize="1269,1007" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Demo Sequence" sap:VirtualizedContainerService.HintSize="450,424" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Demo Sequence" sap:VirtualizedContainerService.HintSize="520,984" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="ui:Image" Name="targetImg" />
         <Variable x:TypeArguments="x:String" Name="imgValue" />
@@ -99,9 +99,33 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LoadImage DisplayName="Load Image" FileName="C:\Users\Savage\Pictures\Temp\NA_LOGO.jpg" sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="LoadImage_1" Image="[targetImg]" />
-      <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[targetImg]" NoopExecution="False" Text="[imgValue]" />
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Target value = &quot; + Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(imgValue.Trim.ToLower)]" />
+      <ui:LoadImage DisplayName="Load Image" FileName="C:\Users\Savage\Pictures\Temp\NA_LOGO.jpg" sap:VirtualizedContainerService.HintSize="486,118" sap2010:WorkflowViewState.IdRef="LoadImage_3" Image="[targetImg]" />
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,280" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LoadImage DisplayName="Load Image" FileName="C:\Users\Savage\Pictures\Temp\Logo_AT.png" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="LoadImage_2" Image="[targetImg]" />
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,280" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LoadImage DisplayName="Load Image" FileName="C:\Users\Savage\Pictures\Temp\EA-logo_2019.jpg" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="LoadImage_4" Image="[targetImg]" />
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
+      <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[targetImg]" NoopExecution="False" Text="[imgValue]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,166" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Target value = &quot; + Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(imgValue.Trim.ToLower)]" />
     </Sequence>
   </Sequence>
 </Activity>
