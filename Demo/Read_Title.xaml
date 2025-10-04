@@ -108,7 +108,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:ReadTextFile File="{x:Null}" Content="[testData]" DisplayName="Read Text File" FileName="Demo_Data\title_data.txt" sap:VirtualizedContainerService.HintSize="468,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-      <If Condition="[testData.Trim.Length = 0]" sap:VirtualizedContainerService.HintSize="468,403" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[testData.Trim.Length = 0]" DisplayName="If &lt;No Data&gt;" sap:VirtualizedContainerService.HintSize="468,403" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Then>
           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
@@ -151,7 +151,7 @@
             <InArgument x:TypeArguments="x:String" xml:space="preserve">[Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(testData.Trim.ToLower).Replace("In ", "in ").
 Replace("From ", "from ").Replace("Of ", "of ").Replace("On ", "on ").Replace("Milf", "MILF").Replace("With ", "with ").
 Replace("By ", "by ").Replace("And ", "and ").Replace("At ", "at ").Replace("For ", "for ").Replace("Bbc ", "BBC ").Replace("Is ", "is ").
-Replace("As ", "as ").Replace("To ", "to ")]</InArgument>
+Replace("As ", "as ").Replace("To ", "to ").Replace("_", " ")]</InArgument>
           </Assign.Value>
         </Assign>
       </Sequence>
