@@ -85,52 +85,42 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Demo" sap:VirtualizedContainerService.HintSize="1158,1173" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Demo" sap:VirtualizedContainerService.HintSize="1150,1167" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Active Sequence" sap:VirtualizedContainerService.HintSize="554,1150" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Active Sequence" sap:VirtualizedContainerService.HintSize="554,1144" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome ACME System 1 - Dashboard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="520,1067" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="d7d5ff3a-6b1e-484c-955c-f33f712549f9" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome ACME System 1 - Dashboard" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="520,1061" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="d7d5ff3a-6b1e-484c-955c-f33f712549f9" UserDataFolderMode="DefaultFolder" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,826" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="ACME Landing Page" sap:VirtualizedContainerService.HintSize="486,820" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NCheckState DisplayName="Check App State 'Dashboard' Page Header" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,764" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d7d5ff3a-6b1e-484c-955c-f33f712549f9" Version="V5">
+              <uix:NCheckState sap2010:Annotation.AnnotationText="Login Status" DisplayName="Check App State 'Dashboard' Page Header" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,758" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d7d5ff3a-6b1e-484c-955c-f33f712549f9" Version="V5">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,278" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,241" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NHover CursorMotionType="Smooth" DisplayName="Hover 'Dashboard' Page Header" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" HoverTime="3" sap2010:WorkflowViewState.IdRef="NHover_1" ScopeIdentifier="d7d5ff3a-6b1e-484c-955c-f33f712549f9" Version="V5">
+                    <uix:NHover CursorMotionType="Smooth" DisplayName="Hover 'Dashboard' Page Header" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,181" HoverTime="3" sap2010:WorkflowViewState.IdRef="NHover_1" ScopeIdentifier="d7d5ff3a-6b1e-484c-955c-f33f712549f9" Version="V5">
                       <uix:NHover.Target>
                         <uix:TargetAnchorable BrowserURL="acme-test.uipath.com" ContentHash="Ico0hkgJ30a6S9w9UY35Ig" DesignTimeRectangle="391, 271, 1140, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' aaname='*Dashboard*' class='page-header' /&gt;" Guid="10344589-244d-42f8-af61-16b0eda3bfbe" InformativeScreenshot="1f2597a8eb49253debe99fb0dbbf7d74.png" Reference="idjsO_ula0-IAplLqQKTsw/22xdp8ZbkEKqIGXhqeqluQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                       </uix:NHover.Target>
-                      <uix:NHover.VerifyOptions>
-                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                          <uix:VerifyExecutionOptions.Retry>
-                            <InArgument x:TypeArguments="x:Boolean" />
-                          </uix:VerifyExecutionOptions.Retry>
-                          <uix:VerifyExecutionOptions.Timeout>
-                            <InArgument x:TypeArguments="x:Double" />
-                          </uix:VerifyExecutionOptions.Timeout>
-                        </uix:VerifyExecutionOptions>
-                      </uix:NHover.VerifyOptions>
                     </uix:NHover>
                   </Sequence>
                 </uix:NCheckState.IfExists>
@@ -151,6 +141,11 @@
                 <uix:NCheckState.Target>
                   <uix:TargetAnchorable BrowserURL="acme-test.uipath.com" ContentHash="Ico0hkgJ30a6S9w9UY35Ig" DesignTimeRectangle="391, 271, 1140, 50" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' aaname='*Dashboard*' class='page-header' /&gt;" Guid="10344589-244d-42f8-af61-16b0eda3bfbe" InformativeScreenshot="1f2597a8eb49253debe99fb0dbbf7d74.png" Reference="idjsO_ula0-IAplLqQKTsw/22xdp8ZbkEKqIGXhqeqluQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </uix:NCheckState>
             </Sequence>
           </ActivityAction>

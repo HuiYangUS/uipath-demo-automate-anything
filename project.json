@@ -4,6 +4,7 @@
   "description": "This is a demo process for practicing automation.",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Credentials.Activities": "[3.0.0]",
     "UiPath.Database.Activities": "[2.0.0]",
     "UiPath.Excel.Activities": "[3.2.1]",
     "UiPath.PDF.Activities": "[3.24.0]",
@@ -16,7 +17,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "25.0.161.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.13",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -30,7 +31,7 @@
       "*password*"
     ],
     "executionType": "Workflow",
-    "readyForPiP": false,
+    "readyForPiP": true,
     "startsInPiP": false,
     "mustRestoreAllDependencies": true,
     "pipType": "ChildSession"
@@ -53,7 +54,7 @@
         "fileName": "Tests\\Give_Me_Names_Workbook_Test.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "3fd0d2fc-afb9-4b46-b396-f231022bd453",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
@@ -67,6 +68,18 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "b61a3679-618b-45bf-883d-15e97c45ce89",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Automated_Tests\\Demo_Web_LoginLogout_Test.xaml",
+      "uniqueId": "1b1dc7ab-415f-474d-b9e5-276b95c9882f",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Demo\\Hello_World.xaml",
+      "uniqueId": "f4917c0a-9929-4cab-bc28-35bc960dd7f3",
       "input": [],
       "output": []
     }
