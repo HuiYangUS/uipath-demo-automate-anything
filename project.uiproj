@@ -1,6 +1,6 @@
 {
   "Name": "uipath-demo-automate-anything",
   "ProjectType": "Process",
-  "Description": "This is a demo process for practicing automation.",
+  "Description": "Blank Process",
   "MainFile": "Main.xaml"
 }

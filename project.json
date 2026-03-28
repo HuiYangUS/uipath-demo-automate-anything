@@ -1,23 +1,20 @@
 {
   "name": "uipath-demo-automate-anything",
-  "projectId": "400578cb-ad5d-4d08-b179-32a7b9d1c1d5",
-  "description": "This is a demo process for practicing automation.",
+  "projectId": "951f604d-3095-4b1d-a624-85d455618ba4",
+  "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Credentials.Activities": "[3.0.0]",
-    "UiPath.Database.Activities": "[2.0.0]",
-    "UiPath.Excel.Activities": "[3.2.1]",
-    "UiPath.PDF.Activities": "[3.24.0]",
-    "UiPath.System.Activities": "[25.8.0]",
-    "UiPath.Testing.Activities": "[25.4.1]",
-    "UiPath.UIAutomation.Activities": "[25.10.16]",
-    "UiPath.WebAPI.Activities": "[2.3.0]"
+    "UiPath.Excel.Activities": "[3.4.1]",
+    "UiPath.System.Activities": "[25.12.2]",
+    "UiPath.Testing.Activities": "[25.10.2]",
+    "UiPath.UIAutomation.Activities": "[25.10.25]",
+    "UiPath.WebAPI.Activities": "[2.4.0]"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
-  "studioVersion": "25.0.161.0",
-  "projectVersion": "1.0.13",
+  "studioVersion": "26.0.189.0",
+  "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -25,13 +22,13 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
-    "workflowSerialization": "DataContract",
+    "workflowSerialization": "NewtonsoftJson",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
     ],
     "executionType": "Workflow",
-    "readyForPiP": true,
+    "readyForPiP": false,
     "startsInPiP": false,
     "mustRestoreAllDependencies": true,
     "pipType": "ChildSession"
@@ -48,17 +45,10 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "9bfc1e29-8535-4424-8858-7626d7d9946f",
+        "testCaseId": "386206c7-6d14-4dab-8cad-f4b2dd85efe7",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "Tests\\Give_Me_Names_Workbook_Test.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "3fd0d2fc-afb9-4b46-b396-f231022bd453",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Tests\\Demo_Web_LoginLogout_TestCase.xaml"
+        "fileName": "Tests\\Test_ACME_System_1_Login.xaml"
       }
     ],
     "saveToCloud": false
@@ -67,19 +57,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "b61a3679-618b-45bf-883d-15e97c45ce89",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "Automated_Tests\\Demo_Web_LoginLogout_Test.xaml",
-      "uniqueId": "1b1dc7ab-415f-474d-b9e5-276b95c9882f",
-      "input": [],
-      "output": []
-    },
-    {
-      "filePath": "Demo\\Hello_World.xaml",
-      "uniqueId": "f4917c0a-9929-4cab-bc28-35bc960dd7f3",
+      "uniqueId": "b6989fa6-dce3-4458-b08d-cc81a78c5b35",
       "input": [],
       "output": []
     }
