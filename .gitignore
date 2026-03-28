@@ -5,6 +5,7 @@
 .settings
 .tmh
 .local
+.storage
 
 ### Classic ###
 Target
